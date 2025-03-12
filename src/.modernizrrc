@@ -1,0 +1,15 @@
+{
+  "enableClasses": true,
+  "enableJSClass": true,
+  "options": ["setClasses"],
+  "feature-detects": [
+    "video",
+    "css/animations",
+    "css/flexbox",
+    "css/flexboxlegacy",
+    "css/multiplebgs",
+    "css/transforms",
+    "storage/localstorage",
+    "history"
+  ]
+}

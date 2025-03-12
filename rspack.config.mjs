@@ -29,6 +29,21 @@ const config = {
   experiments: {
     css: true,
   },
+  module: {
+    rules: [
+      {
+        test: /\.modernizrrc$/,
+        use: [
+          {
+            loader: "val-loader",
+            options: {
+              executableFile: fileURLToPath(import.meta.resolve("val-loader-modernizr")),
+            },
+          },
+        ],
+      },
+    ],
+  },
 };
 
 export default config;
